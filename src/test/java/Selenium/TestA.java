@@ -3,6 +3,7 @@ package Selenium;
 import DriverFrameWork.BrowserTypes;
 import DriverFrameWork.Browsers;
 import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
@@ -31,7 +32,7 @@ public class TestA {
         Thread.sleep(3000);
     }
 
-/*    @Test     // 浏览器的常规操作方法
+    @Test     // 浏览器的常规操作方法
     public void methodB() throws InterruptedException {
         // 浏览器设置指定窗口大小
         Dimension dimension = new Dimension(800, 800);
@@ -53,7 +54,7 @@ public class TestA {
         // 刷新网页
         driver.navigate().refresh();
         sleep(3);
-    }*/
+    }
 
     /*@Test
     public void methodC() throws InterruptedException {
@@ -258,7 +259,7 @@ public class TestA {
                 perform();
     }*/
 
-    @Test // 表单 frame / iframe
+/*    @Test // 表单 frame / iframe
     public void methodX() {
 //        driver.switchTo().frame("aa");
 //        driver.switchTo().frame(0);
@@ -268,7 +269,7 @@ public class TestA {
         WebElement element = driver.findElement(By.id("userA"));
         scrollIntoView(element);
         element.sendKeys("BeyondSoft");
-    }
+    }*/
 
 
 

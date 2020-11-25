@@ -5,6 +5,7 @@
         <classes>
             <class name="Selenium.TestA"/>
             <class name="TestNg.TestNgB"/>
+            <class name="Selenium.TestMove"/>
         </classes>
     </test>
 </suite>
