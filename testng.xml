@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/AUTO/Desktop/BeyondSofter_HTML/SeleniumBase/src/test/java/Selenium/TestA.java">
+    <test verbose="2" preserve-order="true" name="C:/Users/AUTO/Desktop/BeyondSofter_HTML/SeleniumBase/src/test/java/TestNg/testNgA.java">
         <classes>
-            <class name="Selenium.TestA"/>
+            <class name="TestNg.testNgA"/>
             <class name="TestNg.TestNgB"/>
+            <class name="Selenium.TestA"/>
             <class name="Selenium.TestMove"/>
         </classes>
     </test>

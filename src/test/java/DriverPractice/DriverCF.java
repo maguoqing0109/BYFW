@@ -15,7 +15,7 @@ public class DriverCF {
     private String driverLocated = System.getProperty("user.dir");
     private WebDriver driver;
 
-    @BeforeClass
+/*    @BeforeClass
     public void methodA() {
         System.out.println("初始化dirver");
         System.setProperty("webdriver.chrome.driver", driverLocated +
@@ -24,9 +24,9 @@ public class DriverCF {
 //        options.addArguments("--start-maximized");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-    }
+    }*/
 
-    /*@BeforeClass
+    @BeforeClass
     public void methodA() {
         System.out.println("初始化dirver");
         System.setProperty("webdriver.gecko.driver", driverLocated +
@@ -34,7 +34,7 @@ public class DriverCF {
         System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
         driver = new FirefoxDriver();
 
-    }*/
+    }
 
 /*    @BeforeClass
     public void methodA() {

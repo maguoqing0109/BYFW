@@ -3,7 +3,7 @@ package TestNg;
 import org.testng.annotations.*;
 
 public class testNgA {
-    @BeforeClass       // Beforeclass
+    @BeforeClass      // Beforeclass
     public void methodA() {
         System.out.println("这是测试执行");
     }

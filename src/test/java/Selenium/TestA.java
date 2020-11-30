@@ -32,7 +32,7 @@ public class TestA {
         Thread.sleep(3000);
     }
 
-    @Test     // 浏览器的常规操作方法
+/*    @Test     // 浏览器的常规操作方法
     public void methodB() throws InterruptedException {
         // 浏览器设置指定窗口大小
         Dimension dimension = new Dimension(800, 800);
@@ -54,13 +54,14 @@ public class TestA {
         // 刷新网页
         driver.navigate().refresh();
         sleep(3);
-    }
+    }*/
 
-    /*@Test
+/*    @Test
     public void methodC() throws InterruptedException {
         // 获取当前网页的 title 标题
         String titleText = driver.getTitle();
         System.out.println("当前网页的title: " + titleText);
+        Assert.assertEquals(titleText, "界面自动化测试");
         System.out.println("=====================================");
         sleep(3);
 
@@ -109,29 +110,29 @@ public class TestA {
 /*    @Test // 单选框的处理
     public void methodF() throws InterruptedException {
         WebElement elementA = driver.findElement(By.className("OpelA"));
-        elementA.click();
-        sleep(3);
-
-        Boolean isCheckA = elementA.isSelected();
+        *//* elementA.click();
+        sleep(3);*//*
+*//*        Boolean isCheckA = elementA.isSelected();
         System.out.println("Opel单选框是否选中：" + isCheckA);
         sleep(2);
         Assert.assertTrue(isCheckA);
-        System.out.println("==================================");
+        System.out.println("==================================");*//*
 
         WebElement elementB = driver.findElement(By.className("AudiA"));
         Boolean isCheckB = elementB.isSelected();
         System.out.println("Audi单选框是否被选中：" + isCheckB);
-        Assert.assertFalse(isCheckB);
+        Assert.assertTrue(isCheckB);
     }*/
 
-/*    @Test // 复选框的处理
+ /*   @Test // 复选框的处理
     public void methodG() throws InterruptedException {
         WebElement element = driver.findElement(By.name("checkboxC"));
-        *//*element.click();
+*//*        element.click();
         sleep(3);*//*
 
         // 先判断复选框是否为选中状态，在进行点击
         if(!element.isSelected()) {
+            System.out.println("aaaaa");
             element.click();
         }
     }*/
@@ -175,7 +176,8 @@ public class TestA {
 /*    @Test //JS 滚动窗处理
     public void methodL() {
         WebElement element = driver.findElement(By.id("loadA"));
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true)", element);
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].scrollIntoView(true)", element);
 //        JavascriptExecutor js = ((JavascriptExecutor)driver);
 //        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }*/
@@ -191,7 +193,7 @@ public class TestA {
         element.sendKeys(filePath);
     }*/
 
-/*    @Test
+   /* @Test
     public void methodM() throws InterruptedException {
         // 多窗口句柄操作
         WebElement elementA = driver.findElement(By.linkText("Open new window"));
@@ -251,7 +253,7 @@ public class TestA {
 
         driverWait(By.xpath("//option[contains(text(), 'Cheddar')]"));
         WebElement elementFour = driver.findElement(By.xpath("//option[contains(text(), 'Cheddar')]"));
-        scrollIntoView(elementFirst);
+//        scrollIntoView(elementFirst);
         actions.keyDown(Keys.CONTROL).     // SHIFT
                 click(elementFirst).
                 click(elementFour).
@@ -259,7 +261,7 @@ public class TestA {
                 perform();
     }*/
 
-/*    @Test // 表单 frame / iframe
+    @Test // 表单 frame / iframe
     public void methodX() {
 //        driver.switchTo().frame("aa");
 //        driver.switchTo().frame(0);
@@ -269,7 +271,7 @@ public class TestA {
         WebElement element = driver.findElement(By.id("userA"));
         scrollIntoView(element);
         element.sendKeys("BeyondSoft");
-    }*/
+    }
 
 
 
