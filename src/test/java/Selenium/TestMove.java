@@ -35,7 +35,7 @@ public class TestMove {
 
         actions.dragAndDrop(elementA, elementB).perform();
         Thread.sleep(3000);
-        Assert.assertEquals(1, 2);
+//        Assert.assertEquals(1, 2);
 
 /*        actions.clickAndHold(elementA).
                 moveToElement(elementB).
